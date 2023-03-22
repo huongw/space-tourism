@@ -1,10 +1,16 @@
-import './App.css';
+import Nav from "./components/Nav/Nav";
+import { BrowserRouter as Router } from "react-router-dom";
+import Pages from "./pages/Pages";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <>
+      <Router>
+        <Nav />
+        <Pages />
+      </Router>
+    </>
   );
 }
 
