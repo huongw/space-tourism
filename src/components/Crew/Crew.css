@@ -1,0 +1,59 @@
+.crew {
+  display: flex;
+  align-items: flex-end;
+  min-height: 80vh;
+  gap: 10em;
+}
+.crew .content {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.crew .content h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.crew .content h3,
+.crew .content h2 {
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+}
+.crew .content h2 {
+  font-size: 4em;
+  margin-bottom: 0.5em;
+}
+.crew .content h3 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  color: grey;
+}
+
+.crew .content p {
+  font-size: 1.4em;
+  letter-spacing: 1px;
+  max-width: 600px;
+  line-height: 1.4em;
+}
+
+.crew .button-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10em;
+}
+
+.crew button {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 0;
+  border-radius: 50%;
+}
+
+.crew button.active {
+  background-color: #fff;
+}

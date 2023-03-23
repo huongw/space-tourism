@@ -12,20 +12,8 @@
   background-attachment: fixed;
 }
 
-.despage h1 {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-  margin-top: 3em;
-  padding: 0 1em;
-}
-
-.despage .bold {
-  color: grey;
-}
-
-@media only screen and (max-width: 400px) {
-  .despage h1 {
-    margin-top: 1em;
-  }
+.despage {
+  max-width: 1500px;
+  width: 90%;
+  margin: auto;
 }

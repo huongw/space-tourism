@@ -1,9 +1,7 @@
-import React from 'react'
+import "./TechPage.css";
 
 const TechPage = () => {
-  return (
-    <div>TechPage</div>
-  )
-}
+  return <div className="techpage">TechPage</div>;
+};
 
-export default TechPage
+export default TechPage;

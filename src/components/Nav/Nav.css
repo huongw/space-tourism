@@ -47,13 +47,14 @@
 .nav-link .bold {
   padding-right: 0.5em;
   letter-spacing: normal;
+  color: #fff;
 }
 
 .bold {
   font-weight: bold;
 }
 
-.active:before {
+.nav-link .active:before {
   content: "";
   position: absolute;
   bottom: 0;

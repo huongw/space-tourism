@@ -1,5 +1,5 @@
-import { buttons } from "../../data/constants";
-import SelectButton from "./SelectButton";
+import { planets } from "../../data/constants";
+import SelectButton from "../SelectButton";
 
 const PlanetListItem = ({ planet, setPlanet }) => {
   return (
@@ -9,13 +9,13 @@ const PlanetListItem = ({ planet, setPlanet }) => {
       </div>
       <div className="content">
         <div className="button-wrapper">
-          {buttons.map((button) => {
+          {planets.map((p) => {
             return (
               <SelectButton
-                key={button.id}
-                name={button.name}
-                onClick={() => setPlanet(button.name)}
-                planet={planet}
+                key={p.id}
+                name={p.name}
+                onClick={() => setPlanet(p.name)}
+                compare={planet}
               />
             );
           })}
