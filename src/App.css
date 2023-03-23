@@ -7,4 +7,9 @@
 body {
   color: #fff;
   overflow: hidden;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+h2 {
+  font-family: "Bellefair", serif;
 }

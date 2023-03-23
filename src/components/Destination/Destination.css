@@ -1,0 +1,54 @@
+.planet-container {
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10em;
+  width: 80%;
+  margin: auto;
+}
+
+.content {
+  width: 40%;
+}
+
+.img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 60%;
+}
+
+img {
+  max-width: 700px;
+  width: 100%;
+}
+
+.planet-name {
+  font-size: 10rem;
+}
+
+.content .planet-desc {
+  max-width: 600px;
+  font-size: 1.2em;
+  line-height: 1.8em;
+}
+
+.button-wrapper {
+  display: flex;
+  gap: 2em;
+}
+
+.content button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding-bottom: 1em;
+}
+
+button.active {
+  border-bottom: 3px solid #fff;
+}

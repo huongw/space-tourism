@@ -1,14 +1,31 @@
+import { useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Nav.css";
+import { GiMusicSpell } from "react-icons/gi";
+
+const song = require("./Timecop1983_Memories.mp3");
 
 const Nav = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef();
+
+  const handleAudio = () => {
+    if (!isPlaying) {
+      setIsPlaying(true);
+      audioRef.current.play()
+    } else {
+      setIsPlaying(false);
+      audioRef.current.pause()
+    }
+  };
+
   return (
     <div className="nav">
       <div className="logo">logo</div>
       <div className="navbar">
         <ul>
           <li className="nav-link">
-            <NavLink exact to={"/"}>
+            <NavLink exact="true" to={"/"}>
               <span className="bold">00</span> home
             </NavLink>
           </li>
@@ -28,6 +45,10 @@ const Nav = () => {
             </NavLink>
           </li>
         </ul>
+          <div className="audio">
+            <GiMusicSpell onClick={handleAudio} />
+            <audio ref={audioRef} src={song}></audio>
+          </div>
       </div>
     </div>
   );
