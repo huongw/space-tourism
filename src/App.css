@@ -6,10 +6,29 @@
 
 body {
   color: #fff;
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: "Barlow Condensed", sans-serif;
+  min-height: 100vh;
+  position: relative;
+}
+
+h2,
+p,
+h3,
+h5 {
+  font-weight: lighter;
+  letter-spacing: 2px;
 }
 
 h2 {
   font-family: "Bellefair", serif;
+  text-transform: uppercase;
+}
+
+button {
+  letter-spacing: 1px;
+}
+
+p {
+  letter-spacing: normal;
 }

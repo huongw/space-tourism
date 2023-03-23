@@ -34,15 +34,16 @@
   text-transform: uppercase;
 }
 
-.hero-title h1 {
-  font-size: 1.5em;
+.hero-title h5 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
 }
 
 .hero-title h2.bold {
   font-size: 10em;
 }
 
-.explore {
+.explore a {
   background-color: #fff;
   color: #000;
   width: 20rem;
@@ -53,6 +54,26 @@
   justify-content: center;
   text-transform: uppercase;
   font-size: 2em;
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+.explore a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+
+.explore a:hover::before {
+  transform: scale(1.5);
 }
 
 @media only screen and (max-width: 1100px) {
@@ -75,15 +96,15 @@
     text-align: center;
   }
 
-  .explore {
+  .explore a {
     width: 15rem;
     height: 15rem;
   }
 }
 
 @media only screen and (max-width: 660px) {
-  .hero-title h1 {
-    font-size: 1em;
+  .hero-title h5 {
+    font-size: 1.5em;
   }
 
   .hero-title h2.bold {
@@ -96,8 +117,8 @@
   }
 }
 
-@media only screen and (max-width: 530px) {
-  .hero-title h1 {
+@media only screen and (max-width: 420px) {
+  .hero-title h5 {
     font-size: 0.9em;
   }
 
@@ -112,7 +133,7 @@
 }
 
 @media only screen and (max-width: 320px) {
-  .hero-title h1 {
+  .hero-title h5 {
     font-size: 0.8em;
   }
 

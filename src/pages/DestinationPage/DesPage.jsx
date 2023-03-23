@@ -6,7 +6,7 @@ const DesPage = () => {
   return (
     <div className="despage">
       <h1>
-        <span>01</span> pick your destination
+        <span className="bold">01</span> pick your destination
       </h1>
       <PlanetList data={data.destinations} />
     </div>

@@ -36,6 +36,17 @@
   text-transform: uppercase;
   color: #fff;
   font-size: 0.8em;
+  letter-spacing: 4px;
+  transition: 0.1s linear;
+}
+
+.nav-link a:not(.active):hover {
+  color: grey;
+}
+
+.nav-link .bold {
+  padding-right: 0.5em;
+  letter-spacing: normal;
 }
 
 .bold {

@@ -23,11 +23,16 @@ const PlanetListItem = ({ planet, setPlanet }) => {
 
         <h2 className="planet-name">{planet.name}</h2>
         <p className="planet-desc">{planet.description}</p>
-        <div>
+
+        <hr />
+
+        <div className="dist-travel">
           <div>
+            <h3>avg. distance</h3>
             <p>{planet.distance}</p>
           </div>
           <div>
+            <h3>est. travel time</h3>
             <p>{planet.travel}</p>
           </div>
         </div>

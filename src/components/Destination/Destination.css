@@ -1,42 +1,40 @@
 .planet-container {
   display: flex;
-  min-height: 80vh;
   align-items: center;
-  justify-content: space-evenly;
-  gap: 10em;
+  justify-content: center;
+  gap: 5%;
   width: 80%;
-  margin: auto;
-}
-
-.content {
-  width: 40%;
+  margin: 3em auto 0;
+  min-height: 60vh;
 }
 
 .img-wrapper {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  width: 60%;
+  max-width: 600px;
+  min-width: 400px;
+  flex: 1;
 }
 
 img {
-  max-width: 700px;
   width: 100%;
 }
 
 .planet-name {
-  font-size: 10rem;
+  font-size: 8rem;
 }
 
 .content .planet-desc {
   max-width: 600px;
   font-size: 1.2em;
   line-height: 1.8em;
+  margin-bottom: 3em;
 }
 
 .button-wrapper {
   display: flex;
   gap: 2em;
+  margin-bottom: 2em;
 }
 
 .content button {
@@ -47,8 +45,96 @@ img {
   text-transform: uppercase;
   cursor: pointer;
   padding-bottom: 1em;
+  transition: 0.1s linear;
 }
 
 button.active {
   border-bottom: 3px solid #fff;
+}
+
+button:not(.active):hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.dist-travel {
+  display: flex;
+  gap: 5em;
+  text-transform: uppercase;
+  margin-top: 2em;
+  padding-bottom: 2em;
+}
+
+.dist-travel h3 {
+  margin: 0.5em 0 1em;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+
+.dist-travel p {
+  font-size: 2em;
+  font-family: "Bellefair", serif;
+}
+
+@media only screen and (max-width: 1100px) {
+  .planet-container {
+    flex-direction: column;
+  }
+
+  .planet-desc,
+  .planet-name {
+    text-align: center;
+  }
+
+  .dist-travel,
+  .button-wrapper {
+    justify-content: center;
+    margin-top: 3em;
+  }
+
+  .planet-name {
+    font-size: 6em;
+  }
+
+  .content .planet-desc {
+    margin-bottom: 2em;
+  }
+
+  .dist-travel {
+    margin-top: 1em;
+  }
+  .img-wrapper {
+    min-width: auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .planet-container {
+    margin-top: 2em;
+  }
+  .dist-travel,
+  .button-wrapper {
+    justify-content: center;
+    margin-top: 3em;
+  }
+
+  .planet-name {
+    font-size: 3em;
+  }
+
+  .content .planet-desc {
+    margin-bottom: 1em;
+    font-size: 1em;
+  }
+
+  .dist-travel {
+    margin-top: 1em;
+  }
+
+  .dist-travel h3 {
+    font-size: .8em;
+  }
+
+  .dist-travel p {
+    font-size: 1em;
+  }
 }
