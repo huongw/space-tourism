@@ -3,11 +3,13 @@ import { NavLink } from "react-router-dom";
 import "./Nav.css";
 import { GiMusicSpell } from "react-icons/gi";
 import logo from "../../assets/shared/logo.svg";
-
+import hamburger from "../../assets/shared/icon-hamburger.svg";
+import close from "../../assets/shared/icon-close.svg";
 const song = require("./Timecop1983_Memories.mp3");
 
 const Nav = () => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [menuOpened, setMenuOpened] = useState(false);
   const audioRef = useRef();
 
   const handleAudio = () => {
@@ -25,8 +27,14 @@ const Nav = () => {
       <div className="logo">
         <img src={logo} alt="logo" />
       </div>
-      <div className="navbar">
-        <ul>
+      <div className="hamburger" onClick={() => setMenuOpened(!menuOpened)}>
+        <img src={hamburger} alt="hamburger" />
+      </div>
+      <div className={menuOpened ? "navbar open-menu" : "navbar"}>
+        <div className="close" onClick={() => setMenuOpened(!menuOpened)}>
+          <img src={close} alt="close" />
+        </div>
+        <ul onClick={() => setMenuOpened(false)}>
           <li className="nav-link">
             <NavLink exact="true" to={"/"}>
               <span className="bold">00</span> home

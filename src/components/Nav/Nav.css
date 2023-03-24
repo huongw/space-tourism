@@ -2,11 +2,14 @@
   display: flex;
   align-items: center;
   padding-top: 2em;
+  min-height: 5vh;
+  position: relative;
 }
 
 .logo {
   flex: 1;
   position: relative;
+  padding-left: 5%;
 }
 
 .logo:after {
@@ -23,10 +26,8 @@
 
 .logo img {
   width: 50px;
-  position: absolute;
-  left: 10%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  z-index: 2;
+  position: relative;
 }
 
 .navbar {
@@ -98,6 +99,19 @@ svg:hover {
   align-items: center;
 }
 
+.close,
+.hamburger {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 2em;
+  top: 2em;
+}
+.hamburger {
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
 @media only screen and (max-width: 1700px) {
   .navbar ul {
     width: 90%;
@@ -110,4 +124,72 @@ svg:hover {
   .nav-link .bold {
     display: none;
   }
+}
+
+@media only screen and (max-width: 730px) {
+  .audio,
+  .logo:after {
+    display: none;
+  }
+  .nav-link .bold {
+    display: inline;
+  }
+  .close,
+  .hamburger {
+    display: block;
+  }
+  .logo img {
+    width: 40px;
+  }
+
+  .nav {
+    min-height: 8vh;
+  }
+
+  .navbar {
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    backdrop-filter: blur(30px);
+    z-index: 1;
+    padding: 10em 0 0 5em;
+    transform: translateX(100%);
+    transition: 0.3s linear;
+  }
+  .navbar ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .nav-link {
+    padding: 2em 0 0.5em 0;
+  }
+  .nav-link a {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .navbar {
+    padding: 10em 0 0 2em;
+    width: 100%;
+  }
+  .nav-link a {
+    font-size: 1em;
+  }
+  .close,
+  .hamburger {
+    right: 1em;
+    top: 1em;
+  }
+  .hamburger {
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+}
+
+.open-menu.navbar {
+  transform: translateX(0);
 }
