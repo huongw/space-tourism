@@ -13,7 +13,6 @@
   max-width: 600px;
   min-width: 400px;
   flex: 1;
-  min-height: 25em;
 }
 
 img {
@@ -146,5 +145,8 @@ button:not(.active):hover {
 
   .dist-travel p {
     font-size: 1em;
+  }
+  .img-wrapper {
+    min-height: 15em;
   }
 }
