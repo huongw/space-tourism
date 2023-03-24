@@ -130,15 +130,16 @@
     line-height: 2.5em;
   }
   .tech .content h2 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .tech .content h3 {
-    font-size: 1em;
+    font-size: .9em;
   }
 
   .tech .content p {
     font-size: 1em;
     letter-spacing: 1px;
+    line-height: 1.5em;
   }
 
   .tech .img-wrapper {

@@ -116,6 +116,9 @@ button:not(.active):hover {
     justify-content: center;
     margin-top: 2em;
   }
+  .planet-container .button-wrapper {
+    margin-bottom: 1em;
+  }
 
   .planet-name {
     font-size: 3em;
