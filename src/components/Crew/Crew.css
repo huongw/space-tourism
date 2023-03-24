@@ -14,12 +14,7 @@
 }
 
 .crew .img-wrapper {
-  width: 600px;
-}
-
-.crew img {
-  max-width: 600px;
-  min-width: 400px;
+  min-width: 600px;
 }
 
 .crew .content h1 {
@@ -94,7 +89,8 @@
   }
 
   .crew .img-wrapper {
-    width: 400px;
+    max-width: 400px;
+    min-width: auto;
   }
 
   .crew img {
@@ -131,6 +127,6 @@
 
   .crew .img-wrapper {
     flex: initial;
-    width: 250px;
+    max-width: 250px;
   }
 }
