@@ -7,15 +7,9 @@
   min-height: 60vh;
 }
 
-.img-wrapper {
-  display: flex;
-  align-items: center;
+.planet-container img {
   max-width: 600px;
   min-width: 400px;
-  flex: 1;
-}
-
-img {
   width: 100%;
 }
 
@@ -101,9 +95,6 @@ button:not(.active):hover {
 
   .dist-travel {
     margin-top: 1em;
-  }
-  .img-wrapper {
-    min-width: auto;
   }
 }
 

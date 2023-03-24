@@ -42,6 +42,11 @@ h1 {
 
 .img-wrapper {
   margin-top: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  flex: 1;
 }
 
 span.bold {
@@ -64,6 +69,7 @@ span.bold {
   z-index: -1;
   background-repeat: round;
   background-size: cover;
+  background-color: #000;
 }
 
 @media only screen and (max-width: 400px) {
@@ -80,6 +86,6 @@ span.bold {
   }
 
   .img-wrapper {
-    max-width: 200px;
+    width: 200px;
   }
 }

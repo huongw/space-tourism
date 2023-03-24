@@ -92,8 +92,8 @@
   }
 
   .tech .img-wrapper {
-    max-width: 400px;
-    min-width: auto;
+    width: 400px;
+    flex: initial;
   }
 
   .tech img {
@@ -109,10 +109,6 @@
     width: 60px;
     height: 60px;
     font-size: 1.2em;
-  }
-
-  .tech .img-wrapper {
-    flex: initial;
   }
 }
 
@@ -133,7 +129,7 @@
     font-size: 1.5em;
   }
   .tech .content h3 {
-    font-size: .9em;
+    font-size: 0.9em;
   }
 
   .tech .content p {
@@ -143,6 +139,6 @@
   }
 
   .tech .img-wrapper {
-    max-width: 250px;
+    width: 250px;
   }
 }
