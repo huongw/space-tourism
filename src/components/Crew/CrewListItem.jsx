@@ -1,13 +1,21 @@
 import { members } from "../../data/constants";
 import SelectButton from "../SelectButton";
+import { motion } from "framer-motion";
 
 const CrewListItem = ({ member, setMember }) => {
   return (
     <div className="crew">
       <div className="content">
-        <h3>{member.role}</h3>
-        <h2>{member.name}</h2>
-        <p>{member.bio}</p>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <h3>{member.role}</h3>
+          <h2>{member.name}</h2>
+          <p>{member.bio}</p>
+        </motion.div>
         <div className="button-wrapper">
           {members.map((m) => {
             return (
@@ -22,9 +30,15 @@ const CrewListItem = ({ member, setMember }) => {
           })}
         </div>
       </div>
-      <div className="img-wrapper">
+      <motion.div
+        className="img-wrapper"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <img src={member.images.png} alt="" />
-      </div>
+      </motion.div>
     </div>
   );
 };

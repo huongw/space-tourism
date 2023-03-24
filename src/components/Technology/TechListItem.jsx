@@ -1,5 +1,6 @@
 import { technologies } from "../../data/constants";
 import SelectButton from "../SelectButton";
+import { motion } from "framer-motion";
 
 const TechListItem = ({ tech, setTech }) => {
   return (
@@ -18,15 +19,26 @@ const TechListItem = ({ tech, setTech }) => {
             );
           })}
         </div>
-        <div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <h3>the terminology...</h3>
           <h2>{tech.name}</h2>
           <p>{tech.description}</p>
-        </div>
+        </motion.div>
       </div>
-      <div className="img-wrapper">
+      <motion.div
+        className="img-wrapper"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <img src={tech.images.portrait} alt={tech.name} />
-      </div>
+      </motion.div>
     </div>
   );
 };

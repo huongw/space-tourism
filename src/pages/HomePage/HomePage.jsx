@@ -1,10 +1,17 @@
 import { Link } from "react-router-dom";
 import "./HomePage.css";
+import { motion } from "framer-motion";
 
 const HomePage = () => {
   return (
     <div className="homepage main">
-      <div className="hero">
+      <motion.div
+        className="hero"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <div>
           <div className="hero-title">
             <h5>So, you want to travel to</h5>
@@ -20,7 +27,7 @@ const HomePage = () => {
         <div className="explore">
           <Link to={"/destination"}>Explore</Link>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
