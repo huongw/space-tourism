@@ -10,7 +10,7 @@ const CrewListItem = ({ member, setMember }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
         >
           <h3>{member.role}</h3>
           <h2>{member.name}</h2>

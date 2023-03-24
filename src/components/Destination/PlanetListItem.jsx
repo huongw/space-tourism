@@ -32,7 +32,7 @@ const PlanetListItem = ({ planet, setPlanet }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
         >
           <h2 className="planet-name">{planet.name}</h2>
           <p className="planet-desc">{planet.description}</p>
