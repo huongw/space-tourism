@@ -4,7 +4,7 @@ import PlanetList from "../../components/Destination/PlanetList";
 
 const DesPage = () => {
   return (
-    <div className="despage">
+    <div className="despage main">
       <h1>
         <span className="bold">01</span> pick your destination
       </h1>

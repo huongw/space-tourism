@@ -35,3 +35,18 @@ export const members = [
     name: "Anousheh Ansari",
   },
 ];
+
+export const technologies = [
+  {
+    id: 1,
+    name: "Launch vehicle",
+  },
+  {
+    id: 2,
+    name: "Spaceport",
+  },
+  {
+    id: 3,
+    name: "Space capsule",
+  },
+];

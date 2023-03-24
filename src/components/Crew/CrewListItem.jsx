@@ -16,6 +16,7 @@ const CrewListItem = ({ member, setMember }) => {
                 name={m.name}
                 onClick={() => setMember(m.name)}
                 compare={member}
+                btnName={""}
               />
             );
           })}

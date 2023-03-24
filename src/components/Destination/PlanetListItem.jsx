@@ -16,6 +16,7 @@ const PlanetListItem = ({ planet, setPlanet }) => {
                 name={p.name}
                 onClick={() => setPlanet(p.name)}
                 compare={planet}
+                btnName={p.name}
               />
             );
           })}

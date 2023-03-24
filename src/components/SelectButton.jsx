@@ -1,9 +1,9 @@
 import React from "react";
 
-const SelectButton = ({ name, onClick, compare }) => {
+const SelectButton = ({ name, onClick, compare, btnName }) => {
   return (
     <button className={name === compare.name ? "active" : ""} onClick={onClick}>
-      {name}
+      {btnName}
     </button>
   );
 };

@@ -1,8 +1,9 @@
 .planet-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 5%;
-  margin: 3em auto 0;
+  margin: auto;
   min-height: 60vh;
 }
 
@@ -46,7 +47,7 @@ img {
   transition: 0.1s linear;
 }
 
-button.active {
+.planet-container button.active {
   border-bottom: 3px solid #fff;
 }
 
@@ -95,6 +96,7 @@ button:not(.active):hover {
 
   .content .planet-desc {
     margin-bottom: 2em;
+    font-size: 1.1em;
   }
 
   .dist-travel {
@@ -107,12 +109,12 @@ button:not(.active):hover {
 
 @media only screen and (max-width: 400px) {
   .planet-container {
-    margin-top: 2em;
+    margin-top: 0;
   }
   .dist-travel,
-  .button-wrapper {
+  .planet-container .button-wrapper {
     justify-content: center;
-    margin-top: 3em;
+    margin-top: 2em;
   }
 
   .planet-name {
@@ -129,7 +131,7 @@ button:not(.active):hover {
   }
 
   .dist-travel h3 {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 
   .dist-travel p {

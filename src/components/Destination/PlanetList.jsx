@@ -5,7 +5,6 @@ import "./Destination.css";
 
 const PlanetList = ({ data }) => {
   const [planet, setPlanet] = useState("Moon");
-
   return (
     <div className="planet-container">
       {planet === "Moon" && (
