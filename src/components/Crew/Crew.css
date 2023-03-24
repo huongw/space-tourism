@@ -129,7 +129,6 @@
   }
 
   .crew .img-wrapper {
-    flex: initial;
     max-width: 250px;
   }
 }

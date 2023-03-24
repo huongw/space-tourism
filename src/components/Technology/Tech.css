@@ -142,5 +142,6 @@
 
   .tech .img-wrapper {
     max-width: 250px;
+    min-height: 20em;
   }
 }
