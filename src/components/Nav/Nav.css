@@ -155,8 +155,9 @@ svg:hover {
     backdrop-filter: blur(30px);
     z-index: 1;
     padding: 10em 0 0 5em;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
     transform: translateX(100%);
-    transition: 0.3s linear;
   }
   .navbar ul {
     flex-direction: column;
@@ -168,6 +169,12 @@ svg:hover {
   }
   .nav-link a {
     font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 729px) {
+  .navbar {
+    transition: 0.3s linear;
   }
 }
 
@@ -192,4 +199,6 @@ svg:hover {
 
 .open-menu.navbar {
   transform: translateX(0);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }

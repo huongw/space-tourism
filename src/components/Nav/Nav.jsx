@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Nav.css";
-import { GiMusicSpell } from "react-icons/gi";
+import { HiOutlineMusicNote } from "react-icons/hi";
 import logo from "../../assets/shared/logo.svg";
 import hamburger from "../../assets/shared/icon-hamburger.svg";
 import close from "../../assets/shared/icon-close.svg";
@@ -57,7 +57,7 @@ const Nav = () => {
           </li>
         </ul>
         <div className="audio">
-          <GiMusicSpell onClick={handleAudio} />
+          <HiOutlineMusicNote onClick={handleAudio} />
           <audio ref={audioRef} src={song}></audio>
         </div>
       </div>
