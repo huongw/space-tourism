@@ -7,6 +7,19 @@
   min-height: 60vh;
 }
 
+.img-wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  min-width: 400px;
+  flex: 1;
+  min-height: 27em;
+}
+
+img {
+  width: 100%;
+}
+
 .planet-name {
   font-size: 8rem;
 }

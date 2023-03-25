@@ -67,19 +67,6 @@ span.bold {
   background-size: cover;
 }
 
-.img-wrapper {
-  display: flex;
-  align-items: center;
-  max-width: 600px;
-  min-width: 400px;
-  flex: 1;
-  min-height: 27em;
-}
-
-img {
-  width: 100%;
-}
-
 @media only screen and (max-width: 400px) {
   h1 {
     font-size: 1em;
