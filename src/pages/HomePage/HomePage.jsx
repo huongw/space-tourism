@@ -7,8 +7,8 @@ const HomePage = () => {
     <div className="homepage main">
       <div className="hero">
         <motion.div
-          initial={{ transform: "translateX(-50%)" }}
-          animate={{ transform: "translateX(0)" }}
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.7 }}
         >
@@ -28,7 +28,7 @@ const HomePage = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ delay: 0.3, duration: 0.7 }}
+          transition={{ delay: 0.7, duration: 1 }}
         >
           <Link to={"/destination"}>Explore</Link>
         </motion.div>
