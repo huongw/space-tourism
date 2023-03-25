@@ -10,14 +10,14 @@
 .img-wrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
   max-width: 600px;
   min-width: 400px;
-  flex: 1;
   min-height: 27em;
 }
 
 img {
-  width: 100%;
+  width: 95%;
 }
 
 .planet-name {
@@ -78,6 +78,7 @@ button:not(.active):hover {
 @media only screen and (max-width: 1100px) {
   .planet-container {
     grid-template-columns: 1fr;
+    gap: 0;
   }
   .content {
     display: grid;
@@ -117,6 +118,7 @@ button:not(.active):hover {
 @media only screen and (max-width: 500px) {
   .planet-container {
     margin-top: 0;
+    min-height: auto;
   }
   .dist-travel,
   .planet-container .button-wrapper {

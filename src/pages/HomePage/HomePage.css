@@ -109,7 +109,11 @@
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
+  .hero {
+    min-height: auto;
+    padding-top: 3em;
+  }
   .hero-title h5 {
     font-size: 0.9em;
   }
