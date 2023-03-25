@@ -111,7 +111,7 @@
 
 @media only screen and (max-width: 500px) {
   .hero {
-    min-height: 80vh;
+    gap: 0;
   }
   .hero-title h5 {
     font-size: 0.9em;
