@@ -10,7 +10,7 @@ body {
   font-family: "Barlow Condensed", sans-serif;
   min-height: 100vh;
   position: relative;
-  background-color: #0B0D17;
+  background-color: #0b0d17;
 }
 
 h1,
@@ -65,6 +65,19 @@ span.bold {
   z-index: -1;
   background-repeat: round;
   background-size: cover;
+}
+
+.img-wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  min-width: 400px;
+  flex: 1;
+  min-height: 27em;
+}
+
+img {
+  width: 100%;
 }
 
 @media only screen and (max-width: 400px) {

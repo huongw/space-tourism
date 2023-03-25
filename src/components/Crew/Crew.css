@@ -126,10 +126,11 @@
   .crew button {
     width: 10px;
     height: 10px;
+    padding-bottom: 0;
   }
 
   .crew .img-wrapper {
     max-width: 250px;
-    min-height: 20em;
+    min-height: 21em;
   }
 }

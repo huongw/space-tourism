@@ -5,14 +5,13 @@ import { motion } from "framer-motion";
 const HomePage = () => {
   return (
     <div className="homepage main">
-      <motion.div
-        className="hero"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <div>
+      <div className="hero">
+        <motion.div
+          initial={{ transform: "translateX(-50%)" }}
+          animate={{ transform: "translateX(0)" }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.7 }}
+        >
           <div className="hero-title">
             <h5>So, you want to travel to</h5>
             <h2 className="bold">Space</h2>
@@ -23,11 +22,17 @@ const HomePage = () => {
             Well sit back, and relax because we'll give you a truly out of this
             world experience!
           </p>
-        </div>
-        <div className="explore">
+        </motion.div>
+        <motion.div
+          className="explore"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ delay: 0.3, duration: 0.7 }}
+        >
           <Link to={"/destination"}>Explore</Link>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
     </div>
   );
 };
