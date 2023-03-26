@@ -110,9 +110,6 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .crew {
-    min-height: auto;
-  }
   .crew .content h2 {
     font-size: 1.5em;
   }
@@ -123,6 +120,10 @@
   .crew .content p {
     font-size: 1em;
     letter-spacing: 1px;
+  }
+
+  .crew .button-wrapper {
+    margin-top: 0;
   }
 
   .crew button {
