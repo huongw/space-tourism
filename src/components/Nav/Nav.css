@@ -137,6 +137,9 @@ svg:hover {
   .hamburger {
     display: block;
   }
+  .hamburger {
+    padding-right: 5%;
+  }
   .logo img {
     width: 30px;
   }
@@ -185,8 +188,7 @@ svg:hover {
   .nav-link a {
     font-size: 1em;
   }
-  .close,
-  .hamburger {
+  .close {
     right: 1em;
     top: 1em;
   }
