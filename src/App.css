@@ -70,6 +70,7 @@ span.bold {
 @media only screen and (max-width: 500px) {
   h1 {
     font-size: 1em;
+    margin-top: 1em;
   }
 
   .button-wrapper {
@@ -82,5 +83,6 @@ span.bold {
 
   .img-wrapper {
     max-width: 200px;
+    margin-top: 1em;
   }
 }
