@@ -42,7 +42,7 @@ img {
 }
 
 .planet-container .content button {
-  padding-bottom: 1em;
+  padding-bottom: .5em;
 }
 
 .planet-container button.active {
@@ -120,7 +120,7 @@ button:not(.active):hover {
   .dist-travel,
   .planet-container .button-wrapper {
     justify-content: center;
-    margin-top: 2em;
+    margin-top: 0;
   }
 
   .planet-name {
