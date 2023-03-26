@@ -2,7 +2,7 @@
   display: grid;
   align-items: flex-end;
   min-height: 80vh;
-  gap: 5em;
+  gap: 3em;
   grid-template-columns: repeat(2, 1fr);
 }
 .crew .content {
@@ -30,7 +30,7 @@
 }
 .crew .content h2 {
   font-size: 4em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.2em;
 }
 .crew .content h3 {
   font-size: 2em;

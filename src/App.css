@@ -33,16 +33,39 @@ button {
 
 p {
   letter-spacing: normal;
+  padding-bottom: 1em;
 }
 
 h1 {
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-top: 3em;
+}
+
+.flex-wrapper {
+  margin-top: 6em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5em;
+}
+
+.flex-wrapper .next {
+  display: none;
+  align-items: center;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: rgb(192, 190, 190);
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.flex-wrapper .next svg {
+  color: rgb(192, 190, 190);
 }
 
 .button-wrapper {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   display: flex;
   gap: 2em;
 }
@@ -73,19 +96,34 @@ span.bold {
   background-size: cover;
 }
 
+@media only screen and (max-width: 730px) {
+  .flex-wrapper .next {
+    display: flex;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   h1 {
     font-size: 1em;
+  }
+  .flex-wrapper {
     margin-top: 1em;
+  }
+  .flex-wrapper .next {
+    font-size: 0.8em;
   }
 
   .button-wrapper {
     gap: 1em;
-    margin-bottom: 1em;
   }
 
   .img-wrapper {
     max-width: 200px;
     margin-top: 1em;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .content p {
+    font-size: 0.9em;
   }
 }

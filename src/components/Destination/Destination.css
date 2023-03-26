@@ -28,7 +28,6 @@ img {
   max-width: 600px;
   font-size: 1.2em;
   line-height: 1.8em;
-  margin-bottom: 3em;
 }
 
 .content button {
@@ -42,7 +41,7 @@ img {
 }
 
 .planet-container .content button {
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
 }
 
 .planet-container button.active {
@@ -100,7 +99,6 @@ button:not(.active):hover {
   }
 
   .content .planet-desc {
-    margin-bottom: 2em;
     font-size: 1.1em;
   }
 
@@ -132,7 +130,7 @@ button:not(.active):hover {
   }
 
   .content .planet-desc {
-    margin-bottom: 1em;
+    margin-bottom: 0;
     font-size: 1em;
   }
 
@@ -149,5 +147,11 @@ button:not(.active):hover {
   }
   .img-wrapper {
     min-height: 15em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .planet-container .content button {
+    font-size: 0.7em;
   }
 }
