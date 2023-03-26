@@ -41,6 +41,12 @@ h1 {
   margin-top: 3em;
 }
 
+.button-wrapper {
+  margin-bottom: 2em;
+  display: flex;
+  gap: 2em;
+}
+
 .img-wrapper {
   margin-top: 3em;
 }
@@ -75,10 +81,7 @@ span.bold {
 
   .button-wrapper {
     gap: 1em;
-  }
-
-  .content button {
-    padding-bottom: 0.5em;
+    margin-bottom: 1em;
   }
 
   .img-wrapper {

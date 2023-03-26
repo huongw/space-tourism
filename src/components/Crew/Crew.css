@@ -124,13 +124,11 @@
 
   .crew .button-wrapper {
     margin-top: 0;
-    margin-bottom: 1em;
   }
 
   .crew button {
     width: 10px;
     height: 10px;
-    padding-bottom: 0;
   }
 
   .crew .img-wrapper {

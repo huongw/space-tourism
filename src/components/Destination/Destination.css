@@ -31,12 +31,6 @@ img {
   margin-bottom: 3em;
 }
 
-.button-wrapper {
-  display: flex;
-  gap: 2em;
-  margin-bottom: 2em;
-}
-
 .content button {
   outline: none;
   border: none;
@@ -44,8 +38,11 @@ img {
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
-  padding-bottom: 1em;
   transition: 0.1s linear;
+}
+
+.planet-container .content button {
+  padding-bottom: 1em;
 }
 
 .planet-container button.active {
@@ -125,12 +122,13 @@ button:not(.active):hover {
     justify-content: center;
     margin-top: 2em;
   }
-  .planet-container .button-wrapper {
-    margin-bottom: 1em;
-  }
 
   .planet-name {
     font-size: 3em;
+  }
+
+  .planet-container .content button {
+    padding-bottom: 0.3em;
   }
 
   .content .planet-desc {
