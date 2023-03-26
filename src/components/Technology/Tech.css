@@ -27,7 +27,8 @@
   margin-bottom: 0.2em;
 }
 .tech .content h3 {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.2em;
+  color: rgb(153, 152, 152);
 }
 
 .tech .content p {
@@ -82,10 +83,6 @@
 
   .tech .content h2 {
     font-size: 3em;
-  }
-
-  .tech .content h3 {
-    margin-bottom: 0;
   }
 
   .tech .content p {
