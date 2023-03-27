@@ -1,17 +1,28 @@
-import { useState } from "react";
 import CrewListItem from "./CrewListItem";
 import "./Crew.css";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/splide/dist/css/splide.min.css";
+
+const settings = {
+  perPage: 1,
+  arrows: true,
+  pagination: true,
+  drag: "free",
+  snap: true
+};
 
 const CrewList = ({ data }) => {
-  const [member, setMember] = useState("Douglas Hurley");
-
   return (
     <div>
-      
-      {member === "Douglas Hurley" && <CrewListItem member={data[0]} setMember={setMember}/>}
-      {member === "Mark Shuttleworth" && <CrewListItem member={data[1]} setMember={setMember}/>}
-      {member === "Victor Glover" && <CrewListItem member={data[2]} setMember={setMember}/>}
-      {member === "Anousheh Ansari" && <CrewListItem member={data[3]} setMember={setMember}/>}
+      <Splide options={{ ...settings }}>
+        {data.map((m) => {
+          return (
+            <SplideSlide key={m.id}>
+              <CrewListItem member={m} />
+            </SplideSlide>
+          );
+        })}
+      </Splide>
     </div>
   );
 };

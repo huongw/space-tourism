@@ -1,8 +1,6 @@
-import { members } from "../../data/constants";
-import SelectButton from "../SelectButton";
 import { motion } from "framer-motion";
 
-const CrewListItem = ({ member, setMember }) => {
+const CrewListItem = ({ member }) => {
   return (
     <div className="crew">
       <div className="content">
@@ -16,19 +14,6 @@ const CrewListItem = ({ member, setMember }) => {
           <h2>{member.name}</h2>
           <p>{member.bio}</p>
         </motion.div>
-        <div className="button-wrapper">
-          {members.map((m) => {
-            return (
-              <SelectButton
-                key={m.id}
-                name={m.name}
-                onClick={() => setMember(m.name)}
-                compare={member}
-                btnName={""}
-              />
-            );
-          })}
-        </div>
       </div>
       <motion.div
         className="img-wrapper"
