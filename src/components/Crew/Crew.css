@@ -97,8 +97,13 @@
   }
 
   .splide__pagination {
-    display: none !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    bottom: 0 !important;
+    width: 100%;
+    margin-bottom: .5em !important;
   }
+  
   .splide__arrow {
     display: flex !important;
   }
