@@ -55,7 +55,7 @@
 .splide__pagination {
   right: initial !important;
   gap: 1em;
-  bottom: 5% !important;
+  bottom: 20% !important;
 }
 
 .splide__pagination__page {
